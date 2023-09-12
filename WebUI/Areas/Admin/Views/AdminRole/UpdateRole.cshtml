@@ -1,0 +1,20 @@
+﻿@using WebUI.Models
+@model RoleUpdateViewModel
+@{
+    ViewData["Title"] = "UpdateRole";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>Rol Düzenleme Sayfası</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label>Role ID</label>
+        <input type="text" name="Id" value="@Model.Id" class="form-group" />
+    </div>
+     <div class="form-group">
+        <label>Role Başlığı</label>
+        <input type="text" name="name" value="@Model.name" class="form-group" />
+    </div>
+    <button class="btn btn-success">Rolü Güncelle</button>
+</form>
